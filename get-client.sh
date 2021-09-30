@@ -23,7 +23,7 @@ PLATFORM_URL='https://releases.1c.ru/version_file?nick=Platform83&ver='$VERSION_
 DOWNLOAD_URL=$(wget -qO- --load-cookies cookies1cwget "$PLATFORM_URL" | grep -oP '(?<=a href=")[^"]+(?=">Скачать дистрибутив<)')
 
 # Загрузка дистрибутива
-wget -O deb64_$PLATFORM_PATH.tar.gz --load-cookies cookies1cwget "$DOWNLOAD_URL"
+wget -O client_$PLATFORM_PATH.deb64.tar.gz --load-cookies cookies1cwget "$DOWNLOAD_URL"
 
 # TODO: mktemp
 rm cookies1cwget

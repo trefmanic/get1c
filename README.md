@@ -8,5 +8,5 @@ example:
 
     get-client.sh <user_name> <password> <version>
 
-where //<version>// must be provided in the following format: __8.3.xx.yyyy__, where
+where _<version>_ must be provided in the following format: __8.3.xx.yyyy__, where
 __xx__ is a major version and __yyyy__ is a minor version.
